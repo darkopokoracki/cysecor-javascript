@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+
+    <style>
+        a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Hello World</h1>
+
+    <button onclick="pokreniMe(this)">Zuto dugme</button>
+    <button onclick="pokreniMe(this)">Zeleno dugme</button>
+    <button onclick="pokreniMe(this)">Plavo dugme</button>
+
+    <p id="kliknuto-dugme"></p>
+
+    <div class="glavni-div">
+        <span>
+            <a class="moj-link" href="#">Link1</a>
+        </span>
+    </div>
+
+    <div class="glavni-div">
+        <section>
+            <a class="moj-link" href="#">Link2</a>
+        </section>
+    </div>
+
+    <div class="glavni-div">
+        <div class="inner-div">
+            <span>
+                <a class="moj-link" href="#">Link3</a>
+            </span>
+        </div>
+    </div>
+
+    <button onclick="testing()">Test</button>
+
+    <div class="random-div">
+        <a class="prvi-random-link" href="#">Prvi random link</a>
+        <a class="drugi-random-link" href="#">Drugi random link</a>
+        <a class="treci-random-link" href="#">Treci random link</a>
+    </div>
+
+    <button onclick="testing2()">Testing2</button>
+
+
+    <div class="testing3-div">
+        <div class="inner-div">
+            <span id="my-span">Moj span element</span>
+        </div>
+    </div>
+
+    <button onclick="testing3()">Testing3</button>
+
+    <div class="atributi-container">
+        <a href="#">Ovaj link ce voditi na goole.com</a>
+        <p>Ovom paragrafu zelim da dodam neki data-darko atribut</p>
+        <h4 data-poky="pokisha">Ovom naslovu zelim da uklonim data-poky atribut</h4>
+        <h5 data-naslov="moj-naslov-5">Preko ovog h5 zelim da dobijem atribut data-naslov</h5>
+    </div>
+
+    <button onclick="atributi()">Testiranje atributa</button>
+
+    <div class="html-div-container"></div>
+    <button onclick="addHtml()">Add HTML</button>
+
+    <div class="moja-forma">
+        <input type="email" id="email">
+        <button onclick="validiraj()">Validiraj</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
