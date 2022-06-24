@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3. domaci</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Events</h1>
+        <section class="events">
+            <div class="event">
+                <h2 class="event-title">click</h2>
+                <span id="first-number">20 +</span>
+                <span id="second-number">15 = </span>
+                <span id="result"></span>
+
+                <button class="izracunaj-btn">Izracunaj</button>
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">mousemove</h2>
+                <p>Pomerajte misem u okviru boxa i videcete kako menja boju!</p>
+                <div class="box"></div>
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">resize</h2>
+                <p>Promenite velicinu prozora i ispisace se koja je trenutna duzina prozora</p>
+                <h2 id="window-width"></h2>
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">submit</h2>
+                <form action="register.php" method="post">
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter your firstname...">
+                        <span class="firstname-error"></span>
+                        <span class="firstname-success"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter your lastname...">
+                        <span class="lastname-error"></span>
+                        <span class="lastname-success"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email...">
+                        <span class="email-error"></span>
+                        <span class="email-success"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="************">
+                        <span class="password-error"></span>
+                        <span class="password-success"></span>
+                    </div>
+
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">change</h2>
+                <p>Svaki put kada se izabere automobil, ispisace se koji automobil je izabran</p>
+                <span>Automobil: </span>
+                <span id="automobil-span"></span>
+                
+                <br>
+
+
+                <select name="automobili" id="automobili">
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                    <option value="porsche">Porsche</option>
+                </select>
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">keydown</h2>
+                <p>Kucajte na tastaturi da biste videli efekat!</p>
+                <div class="letter-container">e</div>
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">copy</h2>
+                <h3>Kopirajte tekst lorem ipsuim tekst koji se nalazi ispod</h3>
+                <p class="copy-paragraph">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Lorem ipsum dolor sit amet.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </p> 
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">cut</h2>
+                <h3>Cutujte lorem ipsum tekst koji se nalzi ispod</h3>
+                <p class="cut-paragraph">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Lorem ipsum dolor sit amet.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </p> 
+            </div>
+
+            <div class="event">
+                <h2 class="event-title">paste</h2>
+                <p>Kopirajte neki tekst i nalepite u textareu. Boja pozadine na textarei ce se promeniti</p>
+                <textarea id="moja-textarea" cols="30" rows="10"></textarea>    
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
