@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Domaci 5</title>
+</head>
+<body>
+    <div class="container">
+        <section class="transform-section">
+            <h2>Javascript i animacije</h2>
+            <div class="transform-methods-container">
+                <div class="single-transform-method">
+                    <h3 class="transform-method-title">Password checkout</h3>
+                    
+                    <p>
+                        Ovde unosimo lozinku i proveravamo koliko je lozinka jaka!
+                        Pomocu transforma prikazujemo vizualno koliko je lozinka jaka
+                        <br> Minimum karaktera: <b>1</b>
+                        <br> Maksimum karaktera: <b>20</b>
+                    </p>
+
+                    <form class="password-form">
+                        <label for="password"> <b>Enter password: </b></label>
+                        <input type="password" id="password" name="passowrd" min="1" max="20">
+
+                        <button class="check-password">Check password strength</button>
+                    </form>
+
+                    <div class="display">
+                        
+                    </div>
+                    <span class="input-error"></span>
+                    <span class="message-level"></span>
+                </div>
+
+                <div class="single-transform-method">
+                    <h3 class="transform-method-title">Rotate profile image</h3>
+                    <div class="image-container">
+                        <img src="img/profile.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="options">
+                        <h3>Rotate image: </h3>
+                        <button class="rotate-button">0&deg;</button>
+                        <button class="rotate-button">90&deg;</button>
+                        <button class="rotate-button">180&deg;</button>
+                        <button class="rotate-button">270&deg;</button>
+                    </div>
+                </div>
+
+                <div class="single-transform-method">
+                    <h3 class="transform-method-title">Show Box</h3>
+                    <button class="show-box-btn">Show box</button>
+                    <div class="box"></div>
+                </div>
+
+                <div class="single-transform-method">
+                    <h3 class="transform-method-title">Refuel</h3>
+                    <div class="main-container">
+                        <div class="tank-container">
+                            <h3>tank</h3>
+                            <div class="tank">
+                                <div class="tank-level"></div>
+                            </div>
+                        </div>
+                        <div class="picture-container">
+                            <img src="img/fuel1.jpg" id="fuel-picture" alt="">
+                        </div>
+                        <div class="buy-container">
+                            <h3>Buy</h3>
+
+                            <input type="number" id="liters" min="1" max="100" placeholder="1 to 100">
+                            <button class="buy-btn">Buy fuel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
