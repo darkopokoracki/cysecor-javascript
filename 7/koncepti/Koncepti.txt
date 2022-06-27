@@ -1,0 +1,38 @@
+*Pravljenje ekstenzije
+
+- Naucicemo kako da pravimo osnove ekstenzije a kasnije cemo moci da razvijamo u zavisnoti
+od naseg znanja iz css i javascripta
+
+- Prvo pravimo manifest.json - glavni fajl za ekstenziju
+
+- JSON je file format koji sluzi za cuvanje podataka i prenos podataka,
+u ovom slucaju kada pravimo ekstenziju, koristimo ga kao konfiguracioni fajl.
+
+- U manifestu definisemo:
+    - "name" = to je naziv nase google ekstenzije
+    - "description" = Opis nase google esktenzije
+    - "version" = da oznacimo verziju nase ekstenzije. u nasem slucaju recimo da je prva
+    - "manifest_version" = Isto kao sto imamo python2 ili python3, tako i ovde
+    imamo verziju manifesta. U nasem slucaju je 3. Imali smo verziju 2 i 1
+    - "icons" = posto cemo imati vise ikonica stavljamo novi
+    objekat i definisemo ikonice
+
+
+- Sada je vreme da ubacimo u google extensions
+    - idemo na manage extensions
+    - Ukljucimo developer mode
+    - idemo na Load Unpacked
+    - Selektujemo folder u kom se nalazi nasa ekstenzija
+
+
+- Sada je vreme da uradimo neku funkcionalnost nase ekstenzije
+    - "content_scripts" = skripte koje koristijmo (valjda funkcionalnosti)
+    - "matches" = sve skripte koje ucitamo ce se ucitati samo na toj adresi
+    preimer: google.com ili youtube... tj. sajt koji zelimo da promenimo
+    - "css" i "js" = ova dva fajla ce se krirati ako posetimo google.com ili 
+    sajt koji definisemo
+
+    - i prakticno sada mozemo da se bacimo na pisanje naseg css i javascripta
+
+
+- Svaki put kada izmenimo kod moramo da idemo na extensions i reload 

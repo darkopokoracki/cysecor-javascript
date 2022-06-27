@@ -1,0 +1,22 @@
+html body {
+	background-color: #111d29;
+}
+
+html body a {
+	color: #b1d237 !important;
+}
+
+#SIvCob {
+	color: #fff !important;
+}
+
+#SIvCob a {
+	color: #b1d237 !important;
+}
+
+/* Domaci
+    google header
+*/
+#searchform .sfbg {
+    background-color: #000000 !important;
+}
