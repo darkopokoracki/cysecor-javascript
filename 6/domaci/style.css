@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#register-form {
+    width: 60%;
+    border-right: 1px solid black;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    letter-spacing: 1px;
+}
+
+input {
+    padding: .5rem .25rem;
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+#register-btn {
+    padding: .5rem .25rem;
+    font-size: 1.125rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+}
