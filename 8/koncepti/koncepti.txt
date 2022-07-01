@@ -1,0 +1,19 @@
+OOP nije vezano za jedan programski jezik
+
+- OOP je nacin na koji pisemo i organizujemo nas kod. Do sada smo kod pisali
+na proceduralan nacin
+
+- OOP pruza bolji nacin organizovanja koda
+
+- Objekte pravimo pomocu klase. klasa je kalup za objekte
+
+- Postoje par nacina na koje se moze pisati OOP kod u javascriptu.
+Svaki ima svoje prednosti i mane.. postoji:
+    1. Object literal
+    2. Object Konstruktor
+    3. Object create metod
+    4. Preko klasa
+
+- Kada radimo OOp nazivi klasa treba da su oznaceni velikim pocetnim slovom
+
+- U objektu mozemo da imamo properties i metohds

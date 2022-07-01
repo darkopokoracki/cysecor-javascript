@@ -1,0 +1,7 @@
+* Neki koraci u resavanju ovog projekta
+
+- Potrebno je da izcucemo sve nazive inputa i da zadamo koji su uslovi za prolaz
+- Definisemo config za nasu formu, tj. skup pravila koja se moraju proveriti
+prilikom popunjavanja forme
+- Prosledjujemo config nasoj klasi: Validator
+- Validator u konstruktoru prima taj config
