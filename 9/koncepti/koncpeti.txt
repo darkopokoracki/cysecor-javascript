@@ -1,0 +1,28 @@
+document.cookie - izlistava cookies
+document.cookie.split(';') - dobijamo niz kolacica i mozemo pristupiti odrejdnom kolacicu
+
+- GDPR - the general data protection regulation = sajt koji prima posete iz drzava
+evropske unije mora da pazi kako prikuplja i koristi podatke o korisnicima. I o tome
+mora da ih obavesti
+
+- Primer kolacica:
+    - kada se se ulogujemo na fb a posle nekog vremena opet udjemo na fb i vec smo automatski
+    ulogovani.. to je zato sto je to stanje zapamceno pomocu kolacica
+    - Shopping cart.. kada ostanu proizvodi u korpi
+    - Marekting tako funkcionise tako sto izbacuju nam proizvode koje zelimo na osnovu toga
+    sto prate nase kolacice i vide sta smo trazili najvise
+
+- Svaki kolacic se skladisti na nasem racunaru i to u memoriji naseg internet pretrazivaca
+To su nasi podaci koji su sacuvani na nasem uradjaju ali istovremeno i taj sajt ima 
+pristup njima.
+
+- Ne treba nikome da dajemo web kolacice! Ako ih neko dobije zanci da ima nase podatke!
+
+- kolacice moze da stvori odredjeni sajt i samo taj sajt moze da upravlja
+svojim kolacicima
+
+- Mi mozemo dozvoliti da neki drugi sajt ubacuje svoje kolacice na nas sajt
+ako mu mi to dozvolimo.
+
+
+
