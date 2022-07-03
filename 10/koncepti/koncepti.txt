@@ -1,0 +1,43 @@
+ - AJAX - asinhroni javascript i XML
+XML se retko koristi, sasa se vise koristi JSON pa bi bilo logicnije da se zove:
+asinhroni javascript i json (AJAJ :D)
+
+- frontend i backedn komuniciraju kroz API i na taj nacin saljemo i primamo JSON
+a JSON su zapravo podaci.
+
+- zahtev i odgovor su podaci koji putuju u formatu JSON-a (no mora uvek biti)
+
+* sinhroni vs asinhroni javascript
+    - SINHRONI: Sve sto smo do sada radili bio je sinhorni javascript, to znaci da se kod koji
+    je napisan izvrsava linija po linija REDOM.
+    Druga linija se izvrsava tek kad se prethodna zavrsi
+
+    sta je problem sa sinhronim javascriptom?
+    na primer: u 5. liniji imamo kod gde dohvatamo neke podatke, i zamlislite da cekamo podatke
+    60 sekundi.. to znaci da 6 linija ne bi mogla da pocne sa izvesavanjem
+
+    - ASINHRONI: Mi u pozadini mozemo nesto izvrsiti dok se kod redom izvrsava
+    ne mora da se ceka sa izvrsavanjem...
+    Funkcija setTimeOut je primer asinhronog javascripta jer ne blokira izvrsavanje
+    koda..
+    Jos jedan primer bi bio AJAX - ajax requestovi - treba mu vremena
+
+    mockap.io - kreiranje apija 
+
+
+- new XMLHttpRequest() obejekat se vise ne koristi!
+- sada se koristi fetch. 
+
+- fetch() funkcija vraca promise(obecanje) da ce kasnije kada bude zavrsena obrada
+na serveru da cemo imati podatke .. onda ide .then(response => {return response.json()})
+da bismo dobili podatke trebaju nam 2 then-a()
+
+- inspect -> Network -> no trottling -> offline = stavljamo da smo offline
+(navodno prekidamo vezu izmedju frontenda i backenda)
+
+- na kraju pisemo .catch() da uhvatimo gresku ako postoji
+
+* GET - uzimamo podatke
+* POST - upisujemo podatke u tabelu
+* PUT - menjamo (editujemo) u tabeli
+* DELETE - brisemo nesto iz tabele
