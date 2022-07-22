@@ -1,0 +1,3 @@
+- Opis domaceg:
+    Uraditi neki bilokakav chart ali da bude onak koji jos nismo radili,
+    da bude zanimljiv i ubaciti svoje podatke!
