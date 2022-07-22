@@ -1,0 +1,3 @@
+- Opis domaceg:
+    - Napraviti da se vidi ko je komentarisao objavu (ZAVRSENO)
+    - Napraviti deo na kojem ce se prikazati informacije o 3 random objave... (ZAVRSENO)

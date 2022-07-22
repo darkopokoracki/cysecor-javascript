@@ -1,0 +1,70 @@
+*** Postupak pravljenja društvene mreže ***
+
+* Priprema za početak projekta:
+    - Skidamo python
+    - Treba da pokrenemo najednostavniji HTTP server da bi nasa društvena mreža radila
+      python -m http.server
+
+
+* Rad na početnoj stranici:
+    - Kucamo strukturu u index.html
+    - Stilizujemo inidex.html u style.css fajlu.
+    - Napravimo custom-modal za registraciju i sakrijemo u style.css pomoću display: none
+    - pravimo app.js unutar js foldera
+    - Napravimo da možemo da prikažemo modal i da ga zatvorimo pomoću JS-a
+
+    - Pravimo validator ili iskoristimo onaj koji smo već napravili
+    - Pravimo konfiguraciju u app.js za našu registraciju
+
+
+* Rad na submitovanoj register formi:
+    - Prvo nam je potrebno mesto gde ćemo da čuvamo korinike.. neka "baza podataka".
+      koristićemo mockAPI -> Pravimo novi projekat Social Network (00:40:00)
+    - Pravimo klasu User tj. novi fajl User.js unutar js foldera i preko fetcha
+      upisemo korisnika na mockAPI i redirektujemo korisnika na hexa.html
+
+
+* Rad na session control:
+    - Pravimo Session.js fajl i unutar njega start, get i destroy session metode
+    - Pre nego što redirektujemo korisnika, kreiraćemo sesiju
+    - Sada kada smo kreirali cookie treba da odradimo autorizaciju tj. koje stranice
+      sme ko da posećuje
+    - Pravimo novi fajl hexa.js unutar glavnog js foldera -> odradimo autorizaciju..
+
+
+* Rad na Login:
+    - nastavljamo u app.js
+    - u User.js pravimo metodu login()
+
+
+* Rad na hexa.htmk (izgled same društvene mreže):
+    - Pravimo strukturu u hexa.html
+    - Stilizujemo u style.css
+    - u User.js pravimo get() metodu da bismo dobili podatke ulogovanog korisnika
+       Uvodenje async funkcije...
+
+* Rad na odjavi se dugmetu:
+    - u hexa.js uništavamo sesiju.
+
+
+* Rad na izmeni nalog dugmetu i modalu:
+    - Pravimo modal sličan kao i za register modal
+    - Napravimo js funkcionalnost za ovaj modal - isti kod kao i za register modal
+    - Pravimo edit metodu u User.js
+
+
+* Rad na obriši profil dugmetu:
+    - Prvo malo stilizujemo dugme
+    - Nastavljamo u hexa.js sa deletovanjem profila
+    - sada pravimo delete metodu u User.js fajlu
+
+
+----- krece najkomplikovaniji deo
+
+* Rad na postovima
+    - pravimo Post.js
+    - unutar Post.js pravimo create metodu asinhornu za kreiranje posta
+    - Prikazujemo postove na hexa.html
+
+
+* Dali rad je fokusiran na prikazivanju postova i komentara----------

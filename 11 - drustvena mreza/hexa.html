@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only - Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hexa</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="inner-container left-side">
+                    <img src="img/profile.jpg" alt="profile img" class="profile">
+                    <p>
+                        <b id="username">Cysecor</b>
+                    </p>
+                    <p id="email">cysecor@gmail.com</p>
+
+                    <button id="editAccount">Izmeni nalog</button>
+                    <button id="logout">Odjavi se</button>
+                </div>
+
+                <div class="random-posts">
+                    <h3>3 random posts</h3>
+                    <p>(Info about 3 random posts)</p>
+
+                    <hr>
+                    <!-- DOMACI -->
+                    <div class="random-posts-wrapper">
+                        <!-- <div class="single-random-post">
+                            <p>post ID: </p>
+                            <p>FROM</p>
+                            <p>Likes: </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="inner-container right-side">
+                    
+                    <!-- POST FORMA -->
+                    <form id="postForm">
+                        <textarea id="postContent" placeholder="Napiši nešto i objavi..."></textarea>
+                        <button>Objavi</button>
+                    </form>
+
+                    <div id="allPostsWrapper">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-modal">
+        <button id="closeModal">X</button>
+
+        <form id="editForm">
+            <h2>Izmeni svoj profil</h2>
+
+            <div>
+                <label for="korisnicko_ime">Korisničko ime:</label>
+                <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="johndoe.123">
+            </div>
+
+            <div>
+                <label for="edit_email">Email adresa:</label>
+                <input type="email" name="register_email" id="edit_email" placeholder="johndoe@gmail.com">
+            </div>
+
+            <div>
+                <button>Izmeni</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <button id="deleteProfile">OBRIŠI PROFIL</button>
+    </div>
+
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Comment.js"></script>
+    <script src="js/Post.js"></script>
+    <script src="js/hexa.js"></script>
+</body>
+</html>
